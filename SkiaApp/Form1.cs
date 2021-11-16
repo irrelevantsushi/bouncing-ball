@@ -27,7 +27,7 @@ namespace SkiaApp
     {
         // Place instance variables here
 
-        const int N = 3; // Number of balls
+        const int N = 5; // Number of balls
         Ball[] balls = new Ball[N]; // says the size of the array is whatever N is, happens to be number of balls
 
         static Random rnd = new Random(); // random number generator that is created here
@@ -46,7 +46,7 @@ namespace SkiaApp
             for (int i = 0; i < N; ++i)
             {
                 ref var ball = ref balls[i]; // .r is radius of ball
-                ball.r = rnd.Next(30, 75); // Sets bounds of radii
+                ball.r = rnd.Next(10, 75); // Sets bounds of radii
                 
                 ball.pos = new SKPoint {
                     X = rnd.Next(ball.r, skControl1.Width - ball.r),
