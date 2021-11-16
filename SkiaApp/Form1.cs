@@ -54,8 +54,8 @@ namespace SkiaApp
                 };
 
                 ball.vel = new SKPoint(
-                    rnd.Next(-6, 6), 
-                    rnd.Next(-6, 6)
+                    rnd.Next(-15, 15), 
+                    rnd.Next(-15, 15)
                 );
                 // example of two different initialization styles, they do the same thing!!: they give value to x and y in the struct
                 
